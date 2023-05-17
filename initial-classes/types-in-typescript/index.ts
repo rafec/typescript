@@ -79,3 +79,11 @@ const employees: Employee[] = [{ name: 'Rafael', lastName: 'Brizuena', birthDate
 function printEmployees(employee: Employee[]) {
     //...
 };
+
+//Type Assertion
+const myAge: any = 20;
+myAge as number;
+
+// const input = document.getElementById('number1') as HTMLInputElement;
+const input = <HTMLInputElement>document.getElementById('number1');
+console.log(input.value);
