@@ -65,3 +65,17 @@ function showScore(score: number | string) {
 };
 showScore(10);
 showScore('10');
+
+//Alias
+type Employee = {
+    name: string,
+    lastName: string,
+    birthDate: Date
+};
+
+// type Employees = Array<Employee>;
+const employees: Employee[] = [{ name: 'Rafael', lastName: 'Brizuena', birthDate: new Date() }];
+
+function printEmployees(employee: Employee[]) {
+    //...
+};
