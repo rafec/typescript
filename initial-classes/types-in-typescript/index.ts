@@ -58,3 +58,10 @@ function errorFunction(message: string): never {
 function fail(): never {
     return errorFunction('Something is broken...');
 };
+
+//Union Types
+function showScore(score: number | string) {
+    console.log('Your score is: ' + score);
+};
+showScore(10);
+showScore('10');
