@@ -45,3 +45,16 @@ function create(object1: object) {
 create({
     property: 1
 });
+
+//Never
+function infiniteLoop(): never {
+    while (true) { };
+};
+
+function errorFunction(message: string): never {
+    throw new Error(message);
+};
+
+function fail(): never {
+    return errorFunction('Something is broken...');
+};
